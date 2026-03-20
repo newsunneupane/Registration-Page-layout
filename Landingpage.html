@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Tailwind Landing Page</title>
+    <!-- Include the Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Optional: Configure Tailwind if needed, for example, to extend the theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#1d4ed8', // blue-700
+                        'primary-hover': '#1e40af', // blue-800
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Navigation Bar -->
+    <header class="p-4 bg-white shadow-md">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                [YourBrand]
+            </div>
+            <div>
+                <a href="#features" class="text-gray-600 hover:text-primary mx-4">Features</a>
+                <a href="#pricing" class="text-gray-600 hover:text-primary mx-4">Pricing</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary mx-4">Contact</a>
+                <a href="#" class="bg-primary text-white px-4 py-2 rounded-lg shadow hover:bg-primary-hover">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-4">
+                    Build your modern website with <span class="text-primary">Tailwind CSS</span>
+                </h1>
+                <p class="text-xl text-gray-500 mb-8 max-w-3xl mx-auto">
+                    A utility-first CSS framework for rapidly building modern websites without ever leaving your HTML. This template is fully responsive and customizable.
+                </p>
+                <a href="#cta" class="bg-primary text-white text-lg font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-primary-hover transition duration-300">
+                    Get Started Today
+                </a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Powerful Features</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                        <div class="text-primary mb-4">
+                            <!-- Icon Placeholder (use an actual SVG icon library like Heroicons in a real project) -->
+                            <svg xmlns="http://www.w3.org" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Utility-First</h3>
+                        <p class="text-gray-600">Tailwind provides low-level utility classes that help you build designs directly in your markup.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                        <div class="text-primary mb-4">
+                            <svg xmlns="http://www.w3.org" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Responsive Design</h3>
+                        <p class="text-gray-600">Easily add screen size prefixes (like `md:`, `lg:`) to apply styles at specific breakpoints.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                        <div class="text-primary mb-4">
+                            <svg xmlns="http://www.w3.org" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Optimized for Production</h3>
+                        <p class="text-gray-600">The build process can purge unused CSS, resulting in incredibly small final bundle sizes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section id="cta" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Ready to Launch Your Project?</h2>
+                <p class="text-gray-600 mb-8">Start building beautiful, modern websites today without the overhead of traditional frameworks.</p>
+                <a href="#" class="bg-primary text-white text-lg font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-primary-hover transition duration-300">
+                    Sign Up Now
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="p-8 bg-gray-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2026 Your Brand. All rights reserved. Built with [Tailwind CSS](https://tailwindcss.com/)</p>
+        </div>
+    </footer>
+
+</body>
+</html>
